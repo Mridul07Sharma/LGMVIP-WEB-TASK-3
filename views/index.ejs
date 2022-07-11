@@ -1,113 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
     <title>REGISTRATION FORM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="row mb-2">
-      <div class=" setting pb-1 mb-2"><h1 class="text-center my-4">Student Enrollment Form</h1></div>
-      <div class="col-6 borde">
-        <div class="col-6 offset-2 ">
-           <form action="/register" method="POST" novalidate class="validated-form">
-               <div class="mb-3">
-                   <label class="form-label" for="name">Name</label>
-                   <input class="form-control" type="text" id="name" name="student[name]" required>
-                  
-               </div>
-               <div class="mb-3">
-                   <label class="form-label" for="email">Email</label>
-                   <input class="form-control" type="text" id="email" name="student[email]" required>
-                 
-               </div>
-               <div class="mb-3">
-                   <label class="form-label" for="website">Website</label>
-                
-                       <input type="text" class="form-control" id="website" name="student[website]" required>
-                       
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="image">Image url</label>
-                    <input class="form-control" type="text" id="image" name="student[image]" required>
-                    
-                </div>
-               <div class="mb-3">
-                <span style="padding-right:1em ;">Gender:</span> 
-                <div class="form-check px-4" style="display:inline-block ;">
-                <label class="form-label" for="male">Male</label>
-                <input class="form-check-input" type="radio" name="student[gender]" id="male" value="Male"></div>
-                <div class="form-check px-4" style="display:inline-block ;">
-                   <label class="form-label" for="female">Female</label>
-                   <input class="form-check-input" type="radio" name="student[gender]" id="female" value="Female">
-                  </div>
-                   </div>
-                   <div class="mb-3">
-                    <span style="padding-right:1em ;"> Skills:</span>
-                    <div class="form-check px-4" style="display:inline-block ;">
-                    <input class="form-check-input" type="checkbox" value="JAVA" id="java" name="student[skills]">
-                    <label class="form-check-label" for="java">
-                      Java
-                    </label>
-                  </div>
-                    <div class="form-check px-4" style="display:inline-block ;">
-                    <input class="form-check-input" type="checkbox" value="HTML" id="html" name="student[skills]">
-                    <label class="form-check-label" for="html">
-                      HTML
-                    </label>
-                  </div>
-                    <div class="form-check px-4" style="display:inline-block ;">
-                    <input class="form-check-input" type="checkbox" value="CSS" id="css" name="student[skills]">
-                    <label class="form-check-label" for="css">
-                     CSS
-                    </label>
-                  </div>
-                  </div>
+      <div class="setting pb-1 mb-2">
+        <h1 class="text-center my-4">Student Enrollment Form</h1>
+      </div>
+      <div class="col-6 borde mt-3">
+        <div class="col-6 offset-2">
+          <form
+            action="/register"
+            method="POST"
+            novalidate
+            class="validated-form"
+          >
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                name="student[name]"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control"
+                type="text"
+                id="email"
+                name="student[email]"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="website">Website</label>
 
-               <div class="mb-3">
-                   <button class="btn btn-success " style="margin-right:2rem ;">Enroll Student</button>
-                   <button class="btn btn-danger mx-4">Clear</button>
-               </div>
-           </form>
-     
+              <input
+                type="text"
+                class="form-control"
+                id="website"
+                name="student[website]"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="image">Image url</label>
+              <input
+                class="form-control"
+                type="text"
+                id="image"
+                name="student[image]"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <span style="padding-right: 1em">Gender:</span>
+              <div class="form-check px-4" style="display: inline-block">
+                <label class="form-label" for="male">Male</label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="student[gender]"
+                  id="male"
+                  value="Male"
+                />
+              </div>
+              <div class="form-check px-4" style="display: inline-block">
+                <label class="form-label" for="female">Female</label>
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="student[gender]"
+                  id="female"
+                  value="Female"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <span style="padding-right: 1em"> Skills:</span>
+              <div class="form-check px-4" style="display: inline-block">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Java"
+                  id="java"
+                  name="student[skills]"
+                />
+                <label class="form-check-label" for="java"> Java </label>
+              </div>
+              <div class="form-check px-4" style="display: inline-block">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="HTML"
+                  id="html"
+                  name="student[skills]"
+                />
+                <label class="form-check-label" for="html"> HTML </label>
+              </div>
+              <div class="form-check px-4" style="display: inline-block">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="CSS"
+                  id="css"
+                  name="student[skills]"
+                />
+                <label class="form-check-label" for="css"> CSS </label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <button class="btn btn-success" style="margin-right: 2rem">
+                Enroll Student
+              </button>
+              <button class="btn btn-danger mx-4" id="clear">Clear</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="col-6" style="padding-right:6rem ; margin-bottom:5rem ;">
+      <div class="col-6 mt-3" style="padding-right: 6rem; margin-bottom: 5rem">
         <div class="offset-1">
-        <h3 class="text-center pb-3">Enrolled Students</h3>
-        <% for(let s of students){ %> 
-        <div class="card mb-3">
-          <div class="row">
+          <h3 class="text-center pb-3">Enrolled Students</h3>
+          <% for(let s of students){ %>
+          <div class="card mb-3">
+            <div class="row">
               <div class="col-md-4">
-                  <img src="<%=s.image%>" alt="" class="img-fluid" style="height: 10rem;">                      
+                <img
+                  src="<%=s.image%>"
+                  alt="***"
+                  class="img-fluid"
+                  style="height: 10.2rem; width: 17rem"
+                />
               </div>
               <div class="col-md-8">
-                  <div class="card-body">
-                      <h6 class="card-title">
-                        Name: <%=s.name%>
-                      </h6>
-                      <p class="card-text fet"><b>Email:</b> <%=s.email%></p>
-                      <p class="card-text fet"><b>Website:</b> <%=s.website%></p>
-                      <p class="card-text fet"><b>Gender:</b> <%=s.gender%></p>
-                      <p class="card-text fet"><b>Skills:</b> <%=s.skills%></p>
-                   
-                  </div>
+                <div class="card-body">
+                  <h5 class="card-title" style="padding-bottom: 0.1rem">
+                    <b> Name:</b> <%=s.name%>
+                  </h5>
+                  <p class="card-text">
+                    <b>Email:</b> <%=s.email%><br />
+                    <b>Website:</b> <%=s.website%><br />
+                    <b>Gender:</b> <%=s.gender%><br />
+                    <b>Skills:</b> <%=s.skills%>
+                  </p>
+                </div>
               </div>
+            </div>
           </div>
-      </div>
-      <% } %> 
-    </div>
+          <% } %>
+        </div>
       </div>
     </div>
     <footer class="footer bg-dark py-3 mt-auto text-center fixed-bottom">
       <div class="container">
-          <span class="foot">Made with &hearts; By Mridul Sharma</span>
+        <span class="foot">Made with &hearts; By Mridul Sharma</span>
       </div>
-  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const name = document.querySelector("#name");
+      const email = document.querySelector("#email");
+      const image = document.querySelector("#image");
+      const website = document.querySelector("#website");
+      const genderM = document.querySelector("#male");
+      const genderF = document.querySelector("#female");
+      const skill1 = document.querySelector("#java");
+      const skill2 = document.querySelector("#css");
+      const skill3 = document.querySelector("#html");
+      const btn = document.querySelector("#clear");
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        name.value = "";
+        email.value = "";
+        image.value = "";
+        website.value = "";
+        genderM.checked = false;
+        genderF.checked = false;
+        skill1.checked = false;
+        skill2.checked = false;
+        skill3.checked = false;
+      });
+    </script>
+  </body>
 </html>

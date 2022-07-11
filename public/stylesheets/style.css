@@ -1,15 +1,10 @@
-.borde{
-    border-right:2px solid black;
+.borde {
+  border-right: 2px solid black;
 }
-.setting{
-    background-color: black;
-    color: white;
-
+.setting {
+  background-color: black;
+  color: white;
 }
-.foot{
-    color: white;
-}
-.fet{
-    font-size: 0.5rem;
-    padding: 0rem;
+.foot {
+  color: white;
 }
